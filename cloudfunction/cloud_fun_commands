@@ -1,0 +1,4 @@
+gsutil mb gs://$DEVSHELL_PROJECT_ID
+gcloud pubsub topics create gcs_notification_topic
+gcloud pubsub subscriptions create gcs_subsciption --topic=gcs_notification_topic
+gsutil notification create -f json -t gcs_notification_topic gs://$DEVSHELL_PROJECT_ID
