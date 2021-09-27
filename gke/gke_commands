@@ -7,3 +7,5 @@ Kubectl get deployments
 kubectl get pods
 kubectl get services
 kubectl scale deployment web --replicas 3
+kubectl config get-contexts
+kubectl config get-clusters
