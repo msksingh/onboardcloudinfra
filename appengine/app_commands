@@ -1,0 +1,2 @@
+gcloud app create --project=$DEVSHELL_PROJECT_ID
+gcloud app deploy
