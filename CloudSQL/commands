@@ -1,4 +1,4 @@
-gcloud sql connect demo-instance --user=root --quiet
+gcloud sql connect demo-mysql-instance --user=root --quiet
 SHOW DATABASES;
 CREATE DATABASE DEMO;
 USE DEMO;
