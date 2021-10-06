@@ -1,0 +1,1 @@
+gcloud sql connect demo-instance --user=root --quiet
