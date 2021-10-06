@@ -1,0 +1,4 @@
+sed -i -e "s/PROJECT_ID/$DEVSHELL_PROJECT_ID/" mydeploy.yaml
+gcloud deployment-manager deployments create my-first-depl --config mydeploy.yaml
+gcloud deployment-manager deployments update my-first-depl --config mydeploy.yaml
+gcloud deployment-manager deployments delete my-first-depl
