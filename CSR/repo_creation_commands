@@ -1,0 +1,8 @@
+gcloud init
+gcloud source repos create demo_cloud_repo
+gcloud source repos clone demo_cloud_repo --project=$DEVSHELL_PROJECT_ID
+git config --global user.email student-03-059d603bde3a@qwiklabs.net
+git config --global user.name "student-03-059d603bde3a"
+git add .
+git commit -m "First Commit"
+git push origin master
