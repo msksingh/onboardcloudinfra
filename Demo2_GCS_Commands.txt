@@ -1,9 +1,9 @@
 Enable notification to pubsub topic....from GCS Bucket
 
-gsutil notification create -t gcs-changes-trizant -f json gs://www.trizant.se
+gsutil notification create -t gcs-changes-trizant -f json gs://<Bucket_name>
 
 LifeCycle
-trizant@cloudshell:~/gcs (trizant-dev-312913)$ cat life31.json
+@cloudshell:~/gcs (trizant-dev-312913)$ cat life31.json
 {
   "rule":
   [
