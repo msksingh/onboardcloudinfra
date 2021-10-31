@@ -1,0 +1,6 @@
+https://gcptrainerprep.qwiklabs.com/labs/388/edit
+
+export LB_IP=34.120.205.18
+echo $LB_IP
+ab -n 500000 -c 1000 http://$LB_IP/
+

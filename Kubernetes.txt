@@ -1,0 +1,23 @@
+Dockerfile
+
+FROM node:12-slim
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install --only=production
+COPY . ./
+CMD [ "node", "index.js" ]
+
+
+docker build -t helloworld .
+docker image list
+docker run -d -p 8080:8080 helloworld
+dcoker ps
+
+
+gcloud container clusters create testcluster1 --zone us-central1-a --num-nodes 2
+kubectl create deploy nginx --image=nginx:1.17.10
+kubectl get pods
+kubectl expose deployment nginx --port 80 --type LoadBalancer
+kubectl get services
+kubectl scale deployment nginx --replicas 3
+kubectl get pods

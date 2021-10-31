@@ -1,0 +1,32 @@
+Enable notification to pubsub topic....from GCS Bucket
+
+gsutil notification create -t gcs-changes-trizant -f json gs://www.trizant.se
+
+LifeCycle
+trizant@cloudshell:~/gcs (trizant-dev-312913)$ cat life31.json
+{
+  "rule":
+  [
+    {
+      "action": {"type": "Delete"},
+      "condition": {"age": 31}
+    }
+  ]
+}
+
+gsutil lifecycle set life31.json gs://$BUCKET_NAME_1
+gsutil lifecycle get gs://$BUCKET_NAME_1
+
+ACL
+
+gsutil acl ch -u AllUsers:R gs://$BUCKET_NAME_1/setup.html
+gsutil acl get gs://$BUCKET_NAME_1/setup.html  > acl_public.txt
+gsutil acl set private gs://$BUCKET_NAME_1/setup.html
+gsutil acl get gs://$BUCKET_NAME_1/setup.html  > acl_private.txt
+
+Versioning 
+
+gsutil versioning get gs://$BUCKET_NAME_1
+gsutil versioning set on gs://$BUCKET_NAME_1
+gsutil cp -v setup.html gs://$BUCKET_NAME_1
+gsutil ls -a gs://$BUCKET_NAME_1/setup.html

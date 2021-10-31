@@ -1,0 +1,19 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/hello-cloudbuild:$SHORT_SHA', '.']
+  timeout: 500s
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/$PROJECT_ID/hello-cloudbuild:$SHORT_SHA']
+- name: 'gcr.io/cloud-builders/kubectl'
+  args: ['set', 'image', 'deployment/my-deployment', 'gcr.io/GOOGLE_CLOUD_PROJECT/hello-cloudbuild:COMMIT_SHA']
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=us-east4-b'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=my-cluster'
+options:
+    machineType: 'N1_HIGHCPU_8'
+timeout: 660s
+tags: ['mytag1', 'mytag2']
+
+
+
+https://gcptrainerprep.qwiklabs.com/labs/1607/edit

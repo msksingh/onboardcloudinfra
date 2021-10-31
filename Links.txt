@@ -1,0 +1,17 @@
+https://earth.google.com/web/@56.5520469,14.1482786,144.22950548a,1000d,30.00000001y,0h,0t,0r
+https://www.submarinecablemap.com/ all sub marine cabeles
+https://www.youtube.com/watch?v=VVJlKJi9FWU
+https://cloud.google.com/about/locations all gcp locations..show all data center and networks
+https://cloud.withgoogle.com/infrastructure/
+Youtube Google Data Center Security : 6 Layers Deep(https://www.youtube.com/watch?v=kd33UVZhnAA)
+https://tinyurl.com/443rkfhy 
+https://opensource.google/projects/explore/featured
+https://k8s.devstats.cncf.io/d/9/companies-table?orgId=1
+https://gcping.com/
+https://medium.com/google-cloud/every-google-cloud-product-described-in-4-words-or-less-4d3f37f4567b
+Best Pratcice for entreprise for Organizations https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations 
+API Explorerr "https://developers.google.com/apis-explorer" to explore API
+https://grumpygrace.dev/posts/gcp-flowcharts/ all services Flowchat
+
+Cloud Build Builder https://github.com/GoogleCloudPlatform/cloud-builders-community
+https://github.com/GoogleCloudPlatform/cloud-builders

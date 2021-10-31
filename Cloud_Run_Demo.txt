@@ -1,0 +1,25 @@
+Dockerfile
+
+FROM node:12-slim
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install --only=production
+COPY . ./
+CMD [ "node", "index.js" ]
+
+docker build -t helloworld .
+docker image list
+docker run -d -p 8080:8080 helloworld
+dcoker ps
+
+
+gcloud config get-value project
+gcloud builds submit --tag gcr.io/trizant-dev-312913/helloworld
+gcloud container images list
+
+
+gcloud config get-value project
+gcloud builds submit --tag gcr.io/trizant-dev-312913/helloworld
+gcloud container images list
+
+gcloud beta run deploy --image gcr.io/trizant-dev-312913/helloworld

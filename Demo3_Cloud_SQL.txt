@@ -1,0 +1,20 @@
+gcloud sql connect wp --user=root
+SHOW DATABASES;
+use wp;
+SELECT DATABASE();
+SHOW TABLES;
+
+CREATE DATABASE test;
+use test;
+
+
+create table emp
+(
+Employee_id int auto_increment primary key,
+Employee_first_name varchar(500) NOT null,
+Employee_last_name varchar(500) NOT null
+);
+
+INSERT INTO emp (employee_first_name, employee_last_name) values ('ABC','SINGH');
+
+select * from emp;
