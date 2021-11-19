@@ -21,3 +21,6 @@ cd ~/ak8s/Deployments/
 Cloud Build
 cd ~/ak8s/Cloud_Build/b
 gcloud builds submit --config cloudbuild.yaml .
+
+
+gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/quickstart-image .
