@@ -24,3 +24,12 @@ gcloud builds submit --config cloudbuild.yaml .
 
 
 gcloud builds submit --tag gcr.io/${GOOGLE_CLOUD_PROJECT}/quickstart-image .
+
+docker build -t name .
+docker images
+docker run -it -d docker_image_name
+docker ps
+docker ps -a
+docker exec -it container_name bash
+docker rm 
+docker rmi 
