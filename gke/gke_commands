@@ -17,3 +17,7 @@ kubectl scale deployment nginx --replicas 3
 git clone https://github.com/GoogleCloudPlatform/training-data-analyst
 ln -s ~/training-data-analyst/courses/ak8s/v1.1 ~/ak8s
 cd ~/ak8s/Deployments/
+
+Cloud Build
+cd ~/ak8s/Cloud_Build/b
+gcloud builds submit --config cloudbuild.yaml .
