@@ -1,3 +1,7 @@
+Query Big tables using Bigquery
+
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data-engineering/demos/bigquery_scale.md
+
 In the Create Dataset dialog, for Dataset ID, type logdata
 Table name, type accesslog
 gs://cloud-training/gcpfci/access_log.csv
