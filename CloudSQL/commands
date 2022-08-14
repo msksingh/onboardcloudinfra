@@ -2,7 +2,7 @@ gcloud sql connect demo-mysql-instance --user=root --quiet
 SHOW DATABASES;
 CREATE DATABASE DEMO;
 USE DEMO;
-CREATE TABLE authors (id INT, name VARCHAR(20), email VARCHAR(20));
+CREATE TABLE authors (id INT NOT NULL, name VARCHAR(20), email VARCHAR(20),PRIMARY KEY (ID));
 SHOW TABLES;
 INSERT INTO authors (id,name,email) VALUES(1,"ABC","abc@abc.com");
 INSERT INTO authors (id,name,email) VALUES(2,"XYZ","p@gmail.com");
